@@ -16,7 +16,7 @@
     // NOTE!! This query is different from the subject/list.php. It uses an INNER JOIN in order to get the subject name
     // instead of the subject ID that is available in this card row
     // 
-    $sql = 'SELECT c.id, c.question, c.answer, s.subject_name FROM card c INNER JOIN subject s ON c.subject_id = s.id';
+    $sql = 'SELECT card.id, card.question, card.answer, subject.subject_name FROM card INNER JOIN subject ON card.subject_id = subject.id';
     $result = $db_conn->query($sql);
     if($db_conn->error){
         print_r($db_conn->error);
