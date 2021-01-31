@@ -7,7 +7,7 @@
  * 
  */
     require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/core/app.php'); 
-    require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/header.php');
+    require(APP_ROOT_DIR . '/fragments/header.php');
 
     // Only do the following if the FORM action was a POST
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -27,7 +27,7 @@
 <h1>Subjects - Delete</h1>
 
 <!-- include the subject_actions, the navigation buttons for the subject pages -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/pages/subjects/subject_actions.php'); ?>
+<?php require(APP_ROOT_DIR . '/pages/subjects/subject_actions.php'); ?>
 
 <p>Use the form below to delete a subject.</p>
 
@@ -46,4 +46,4 @@ if(!empty($result) && $result == TRUE){
 ?>
 
 <!-- include the footer fragment -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/footer.php'); ?>
+<?php require(APP_ROOT_DIR . '/fragments/footer.php'); ?>

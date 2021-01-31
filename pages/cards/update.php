@@ -7,7 +7,7 @@
  * 
  */
     require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/core/app.php'); 
-    require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/header.php');
+    require(APP_ROOT_DIR . '/fragments/header.php');
 
     // Only do the following if the FORM action was a POST
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -33,7 +33,7 @@
 <h1>Cards - Update</h1>
 
 <!-- include the card_actions, the navigation buttons for the card pages -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/pages/cards/card_actions.php'); ?>
+<?php require(APP_ROOT_DIR . '/pages/cards/card_actions.php'); ?>
 
 <p>Use the form below to update a card.</p>
 
@@ -53,4 +53,4 @@ if(!empty($result) && $result == TRUE){
 ?>
 
 <!-- include the footer fragment -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/footer.php'); ?>
+<?php require(APP_ROOT_DIR . '/fragments/footer.php'); ?>

@@ -8,7 +8,7 @@
  */
 
     require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/core/app.php'); 
-    require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/header.php');
+    require(APP_ROOT_DIR . '/fragments/header.php');
 
     // using the $db_conn variable which is initialized in cord/database.php
     // connect to the database and get all the subjects
@@ -26,7 +26,7 @@
 <h1>Cards - List</h1>
 
 <!-- include the card_actions, the navigation buttons for the cards pages -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/pages/cards/card_actions.php'); ?>
+<?php require(APP_ROOT_DIR . '/pages/cards/card_actions.php'); ?>
 
 <?php if($result->num_rows == 0): ?>
     <p>No cards found!</p>
@@ -52,4 +52,4 @@
 <?php endif; ?>
 
 <!-- include the footer fragment -->
-<?php require($_SERVER['DOCUMENT_ROOT'] . '/flashcards/fragments/footer.php'); ?>
+<?php require(APP_ROOT_DIR . '/fragments/footer.php'); ?>
