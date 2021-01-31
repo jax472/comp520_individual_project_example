@@ -1,5 +1,5 @@
 <footer>
-<p>This is the footer!</p>
+<p>"Flashcards" project contains an MIT License, do whatever you want with it.</p>
 </footer>
 </body>
 </html>

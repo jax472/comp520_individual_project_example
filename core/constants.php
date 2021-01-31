@@ -14,7 +14,7 @@
  // BASE_URL will be the "domain name" or the url we type into the browser to access our project
  // directory. You should replace 'flashcards' below with the name of your projects folder as it is
  // named in the xampp htdocs directory
- define("BASE_URL", 'http://localhost/flashcards');
+ define("BASE_URL", 'http://localhost/' . APP_FOLDER_NAME);
 
 // DB_HOST will be set to the name of your host. 
 // The host would be the url/IP address where our database lives at (is hosted at)
@@ -35,6 +35,5 @@ define('DB_USER', 'root');
 // DB_PASS will be set the password of the DB_USER above
 // For simplicity I will leave this blank, as my 'root' user has no password set (this is obviously bad in production)
 define('DB_PASS','');
-
 
 ?>

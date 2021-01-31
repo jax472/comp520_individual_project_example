@@ -7,13 +7,12 @@
  * we only have to include this script, as opposed to including all the other required scripts.
  */
 
-// the only constant we will define outside of the core/constants.php file will be the
-// APP_ROOT_DIR. APP_ROOT_DIR will be the absolute path to the projects root level directory.
-// To see this in action, don't be afraid to echo/print_r the value of the APP_ROOT_DIR constant
-// on of your views.
-//
-// We will use this constant
-define("APP_ROOT_DIR", $_SERVER['DOCUMENT_ROOT'] . '/flashcards/');
+// the only constants we will define outside of the core/constants.php file will be the
+// APP_FOLDER_NAME and the APP_ROOT_DIR. 
+// APP_FOLDER_NAME will be the name of the folder (directory) your project is stored in xampp/htdocs
+// APP_ROOT_DIR will be the absolute path to the projects root level directory.
+define("APP_FOLDER_NAME", "flashcards"); 
+define("APP_ROOT_DIR", $_SERVER['DOCUMENT_ROOT'] . '/' . APP_FOLDER_NAME . '/');
 
 // Loads constants first, as other scripts rely on the named constants defined in this script
 require(APP_ROOT_DIR . 'core/constants.php');
