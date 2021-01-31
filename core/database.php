@@ -14,10 +14,10 @@
  */
 
 // Create connection
-$db_conn = mysqli_connect(DB_HOST, DB_NAME, DB_PASS);
+$db_conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 // Check connection
-if (!$db_conn) {
-  die("Database connection failed: " . mysqli_connect_error());
+if ($db_conn->connect_error) {
+  die("Database connection failed: " . $db_conn->connect_error);
 }
 ?>
